@@ -68,7 +68,7 @@ export default function Index() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.4 }}
-              className="text-primary font-medium tracking-widest uppercase text-sm mb-6"
+              className="text-primary font-medium tracking-widest uppercase text-[10px] md:text-sm lg:text-sm mb-6"
             >
               CREATIVE • CINEMATIC • COLLABORATIVE
             </motion.p>
