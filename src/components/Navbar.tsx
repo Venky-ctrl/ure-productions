@@ -1,16 +1,16 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Services', path: '/services' },
-  { name: 'Our Work', path: '/work' },
-  { name: 'Clients', path: '/clients' },
-  { name: 'Contact', path: '/contact' },
+  { name: "Home", path: "/" },
+  { name: "About Us", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "Our Work", path: "/work" },
+  { name: "Clients", path: "/clients" },
+  { name: "Contact", path: "/contact" },
 ];
 
 export function Navbar() {
@@ -22,8 +22,8 @@ export function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -47,9 +47,9 @@ export function Navbar() {
         <Link to="/" className="group">
           <span className="text-xl font-display font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
             <img
-              src="https://res.cloudinary.com/dudrjp5cn/image/upload/v1769785691/ChatGPT_Image_Jan_30_2026_08_29_24_PM_1_bjfbvq.png"
+              src="https://res.cloudinary.com/dudrjp5cn/image/upload/v1769871254/Gemini_Generated_Image_kkinq5kkinq5kkin_2_w0uisv.png"
               alt="logo"
-              className="w-12"
+              className="w-20"
             />
           </span>
         </Link>

@@ -17,7 +17,7 @@
     --popover-foreground: 45 10% 90%;
 
     /* Gold accent - muted, elegant, not shiny */
-    --primary: 37 86% 65%;
+    --primary: 40 68% 65%;
     --primary-foreground: 0 0% 6%;
 
     --secondary: 0 0% 12%;
@@ -34,14 +34,14 @@
 
     --border: 0 0% 18%;
     --input: 0 0% 12%;
-    --ring: 37 86% 65%;
+    --ring: 40 68% 65%;
 
     --radius: 0.125rem;
 
     /* Custom tokens */
-    --gold: 37 86% 65%;
+    --gold: 40 68% 65%;
     --gold-muted: 37 60% 52%;
-    --gold-glow: 37 90% 72%;
+    --gold-glow: 40 68% 65%;
     --charcoal: 0 0% 8%;
     --charcoal-light: 0 0% 10%;
     --deep-black: 0 0% 4%;
@@ -56,12 +56,12 @@
 
     --sidebar-background: 0 0% 8%;
     --sidebar-foreground: 45 10% 90%;
-    --sidebar-primary: 37 86% 65%;
+    --sidebar-primary: 40 68% 65%;
     --sidebar-primary-foreground: 0 0% 6%;
     --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 45 10% 90%;
     --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 37 86% 65%;
+    --sidebar-ring: 40 68% 65%;
   }
 }
 

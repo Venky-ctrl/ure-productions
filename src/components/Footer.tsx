@@ -32,7 +32,11 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-4">
-              <img src="https://res.cloudinary.com/dudrjp5cn/image/upload/v1769785691/ChatGPT_Image_Jan_30_2026_08_29_24_PM_1_bjfbvq.png" alt='logo' className='w-12 h-12' />
+              <img
+                src="https://res.cloudinary.com/dudrjp5cn/image/upload/v1769871254/Gemini_Generated_Image_kkinq5kkinq5kkin_2_w0uisv.png"
+                alt="logo"
+                className="w-20"
+              />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               URE Productions is a creative visual production house crafting
