@@ -7,27 +7,27 @@ const services = [
   {
     title: "Photography",
     description:
-      "Service description text goes here. Brief explanation of what this service offers.",
+      "Professional photography capturing emotions, fashion, events, and brand stories with creative direction and modern visual style.",
   },
   {
     title: "Videography",
     description:
-      "Service description text goes here. Brief explanation of what this service offers.",
+      "Cinematic videography that transforms real moments into engaging visual stories through creative filming and seamless editing.",
   },
   {
     title: "Events",
     description:
-      "Service description text goes here. Brief explanation of what this service offers.",
+      "Event coverage capturing live experiences through photography, videography, and storytelling that preserves every important moment.",
   },
   {
     title: "Production & Creative",
     description:
-      "Service description text goes here. Brief explanation of what this service offers.",
+      "Creative production services including concept development, shoot execution, and visual storytelling tailored for brands, artists, and businesses.",
   },
   {
     title: "Corporate Services",
     description:
-      "Service description text goes here. Brief explanation of what this service offers.",
+      "Corporate shoot and event coverage providing photography, videography, brand films, and marketing content that helps businesses strengthen their professional presence.",
   },
 ];
 
@@ -117,7 +117,7 @@ export default function Index() {
               Our Services
             </p>
             <h2 className="font-display text-2xl md:text-4xl font-semibold text-foreground">
-              Section Heading
+              From Concept to Capture
             </h2>
             <div className="gold-divider mt-6" />
           </AnimatedSection>

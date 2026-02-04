@@ -116,13 +116,16 @@ export default function About() {
             className="max-w-3xl mx-auto bg-background/95 backdrop-blur-sm p-8 border border-border"
           >
             <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">
-              Page Label
+              About URE Productions
             </p>
             <h1 className="font-display text-3xl md:text-5xl font-semibold text-foreground mb-4">
-              Page Heading <span className="text-primary">Highlight</span>
+              The People Behind <br />
+              The Visual
+              <span className="text-primary"> Stories </span>
             </h1>
             <p className="text-muted-foreground text-base">
-              Page description text goes here.
+              A passionate team of creators, storytellers, and visual artists
+              dedicated to turning ideas into engaging cinematic experiences.
             </p>
           </motion.div>
         </div>
@@ -134,23 +137,34 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">
-                Section Label
+                Who We Are
               </p>
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
-                Section Heading
+                Creative Minds • Visual Storytellers
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed text-sm">
                 <p>
-                  Paragraph 1 text goes here. Description about the company
-                  history and background.
+                  <strong>Company Background</strong> - URE Productions is a
+                  visual storytelling and production house specializing in
+                  photography, videography, brand shoots, corporate coverage,
+                  and creative media production. We focus on capturing emotions,
+                  moments, and brand identities through impactful visuals that
+                  connect with audiences.
                 </p>
                 <p>
-                  Paragraph 2 text goes here. More details about achievements
-                  and mission.
+                  <strong>Achievements / Mission</strong> - From working with
+                  emerging talents and influencers to handling large-scale
+                  corporate events like ISF Junicorn, our mission is to create
+                  visually powerful content that blends creativity,
+                  storytelling, and technical excellence. We believe every
+                  project deserves a unique narrative and cinematic execution.
                 </p>
                 <p>
-                  Paragraph 3 text goes here. Future vision and commitment
-                  statement.
+                  <strong>Vision / Futute</strong> - Our vision is to grow as a
+                  creative production platform that supports artists, brands,
+                  and storytellers while continuously pushing creative
+                  boundaries and industry standards through innovation and
+                  collaboration.
                 </p>
               </div>
             </AnimatedSection>
@@ -184,10 +198,10 @@ export default function About() {
         <div className="container-wide">
           <AnimatedSection className="text-center mb-12">
             <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">
-              Section Label
+              Behind The Lens
             </p>
             <h2 className="font-display text-2xl md:text-4xl font-semibold text-foreground">
-              Section Heading
+              The Crew Behind The Camera
             </h2>
             <div className="gold-divider mt-6" />
           </AnimatedSection>

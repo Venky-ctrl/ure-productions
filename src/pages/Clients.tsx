@@ -4,9 +4,9 @@ import { Button } from '@/components/ui/button';
 import { AnimatedSection } from '@/components/AnimatedSection';
 
 const clients = [
-  { name: 'Client 1', industry: 'Industry' },
-  { name: 'Client 2', industry: 'Industry' },
-  { name: 'Client 3', industry: 'Industry' },
+  { name: 'Partha Saradi', industry: 'SET GYM' },
+  { name: 'Client 2', industry: 'ISF JUNICORN' },
+  { name: 'Client 3', industry: 'RTA Kairatabad' },
   { name: 'Client 4', industry: 'Industry' },
   { name: 'Client 5', industry: 'Industry' },
   { name: 'Client 6', industry: 'Industry' },
@@ -75,10 +75,10 @@ export default function Clients() {
               <AnimatedSection key={client.name} delay={index * 0.05}>
                 <div className="glass-card p-6 text-center hover-lift group">
                   <div className="font-display text-lg md:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300 mb-1">
-                    {client.name}
+                    {client.industry}
                   </div>
                   <p className="text-muted-foreground text-sm">
-                    {client.industry}
+                    {client.name}
                   </p>
                 </div>
               </AnimatedSection>

@@ -7,7 +7,7 @@ const services = [
   {
     title: "Photography Services",
     description:
-      "Service description text goes here. Brief explanation of what this service offers and its benefits.",
+      "Professional photography capturing emotions, fashion, events, and brand stories with creative direction and modern visual style.",
     features: [
       "Wedding & Pre-Wedding Shoots",
       "Engagement & Couple Portraits",
@@ -17,11 +17,12 @@ const services = [
       "Lifestyle & Candid Photography",
       "Maternity & Baby Shoots",
     ],
+    ctatext: "Lock the Frame",
   },
   {
     title: "Videography Services",
     description:
-      "Service description text goes here. Brief explanation of what this service offers and its benefits.",
+      "Cinematic videography that transforms real moments into engaging visual stories through creative filming and seamless editing.",
     features: [
       "Wedding Films & Teasers",
       "Promotional & Corporate Videos",
@@ -29,11 +30,12 @@ const services = [
       "Music Videos",
       "Behind-The-Scenes (BTS) Shoots",
     ],
+    ctatext: "Roll the Camera",
   },
   {
     title: "Production & Creative Services",
     description:
-      "Service description text goes here. Brief explanation of what this service offers and its benefits.",
+      "Creative production services including concept development, shoot execution, and visual storytelling tailored for brands, artists, and businesses.",
     features: [
       "Full Event Coverage (Photo + Video)",
       "Concept Shoots & Storyboarding",
@@ -42,11 +44,12 @@ const services = [
       "Branding & Promotional Content Creation",
       "Social Media Content Production",
     ],
+    ctatext: "Direct the Vision",
   },
   {
     title: "Event & Corporate Services",
     description:
-      "Service description text goes here. Brief explanation of what this service offers and its benefits.",
+      "Event coverage capturing live experiences through photography, videography, and storytelling that preserves every important moment.",
     features: [
       "Corporate Event Coverage",
       "Conferences, Seminars & Workshops",
@@ -54,6 +57,7 @@ const services = [
       "Networking Events",
       "Panel Discussions & Exhibitions",
     ],
+    ctatext: "Capture the Action",
   },
   {
     title: "Additional Services",
@@ -66,6 +70,7 @@ const services = [
       "Editing & Post-Production (Photo/Video)",
       "Album Designing & Printing",
     ],
+    ctatext: "Lock the Frame",
   },
 ];
 
@@ -85,11 +90,14 @@ export default function Services() {
               OUR SERVICES
             </p>
             <h1 className="font-display text-3xl md:text-5xl font-semibold text-foreground mb-4">
-              Page Heading <span className="text-primary">Highlight</span>
+              Creative Production & Visual
+              <span className="text-primary"> Media Services</span>
             </h1>
             <p className="text-muted-foreground text-base">
-              Page description text goes here. Brief introduction about this
-              section.
+              Explore our range of photography, videography, event coverage, and
+              creative production services designed to help individuals, brands,
+              and businesses bring their ideas and moments to life through
+              impactful visual storytelling.
             </p>
           </motion.div>
         </div>
@@ -112,7 +120,7 @@ export default function Services() {
                       {service.description}
                     </p>
                     <Button variant="outline" size="default" asChild>
-                      <Link to="/contact">CTA Button</Link>
+                      <Link to="/contact">{service.ctatext}</Link>
                     </Button>
                   </div>
 
