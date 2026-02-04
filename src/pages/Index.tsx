@@ -50,11 +50,13 @@ export default function Index() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden border-b border-border">
-        {/* Image Placeholder */}
-        <div className="absolute inset-0 image-placeholder">
-          <span className="text-lg">Hero Image</span>
-        </div>
+      <section
+        className="relative min-h-screen flex items-center justify-center overflow-hidden border-b border-border bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/hero-editing-room.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/75" />
 
         {/* Content */}
         <div className="relative z-10 container-wide px-6 md:px-12 lg:px-20 text-center">
@@ -62,7 +64,7 @@ export default function Index() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="max-w-4xl mx-auto bg-background/95 backdrop-blur-sm p-8 md:p-12 border border-border mt-[100px] mb-[100px]"
+            className="max-w-4xl mx-auto bg-black/40 backdrop-blur-md p-8 md:p-12 mt-[100px] mb-[100px]"
           >
             <motion.p
               initial={{ opacity: 0 }}

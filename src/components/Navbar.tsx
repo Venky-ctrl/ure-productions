@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -90,10 +91,23 @@ export function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="lg:hidden p-2 text-foreground hover:text-primary transition-colors duration-300 font-medium text-sm"
-          aria-label="Toggle menu"
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          className="
+            lg:hidden
+            flex items-center justify-center
+            w-10 h-10
+            rounded-md
+            text-foreground
+            hover:text-primary
+          hover:bg-white/5
+            transition-colors duration-300
+          "
         >
-          {isMobileMenuOpen ? "Close" : "Menu"}
+          {isMobileMenuOpen ? (
+            <X className="w-5 h-5" />
+          ) : (
+            <Menu className="w-5 h-5" />
+          )}
         </button>
       </nav>
 

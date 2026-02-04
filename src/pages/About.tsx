@@ -1,33 +1,57 @@
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { AnimatedSection } from '@/components/AnimatedSection';
-import { useEffect, useRef, useState } from 'react';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 100, suffix: '+', label: 'Stat 1' },
-  { value: 50, suffix: '+', label: 'Stat 2' },
-  { value: 25, suffix: '+', label: 'Stat 3' },
-  { value: 10, suffix: '', label: 'Stat 4' },
+  { value: 100, suffix: "+", label: "Stat 1" },
+  { value: 50, suffix: "+", label: "Stat 2" },
+  { value: 25, suffix: "+", label: "Stat 3" },
+  { value: 10, suffix: "", label: "Stat 4" },
 ];
 
 const team = [
   {
-    name: 'Team Member 1',
-    role: 'Role Title',
-    bio: 'Brief bio description text goes here about this team member.',
+    name: "Thakur Neeraj Singh",
+    role: "CEO & Co-Founder",
+    bio: "Sets the direction, asks the hard questions, and keeps the vision honest.",
   },
   {
-    name: 'Team Member 2',
-    role: 'Role Title',
-    bio: 'Brief bio description text goes here about this team member.',
+    name: "Lakshmi Syamalitha",
+    role: "Chief Financial Officer",
+    bio: "Keeps the business financially grounded while planning for what’s next.",
   },
   {
-    name: 'Team Member 3',
-    role: 'Role Title',
-    bio: 'Brief bio description text goes here about this team member.',
+    name: "Shivani",
+    role: "Chief Operations Officier",
+    bio: "Turns plans into action and keeps the work moving without friction.",
+  },
+  {
+    name: "Akbar",
+    role: "Chief Marketing Officier",
+    bio: "Shapes how the brand speaks, shows up, and connects with people.",
+  },
+  {
+    name: "Sriraj",
+    role: "Sales",
+    bio: "Starts conversations, builds trust, and brings the right clients on board.",
+  },
+  {
+    name: "Sanjay",
+    role: "DOP & Editor",
+    bio: "Finds stories in moments and brings them to life through the lens and the edit.",
+  },
+  {
+    name: "Sravan",
+    role: "Editor",
+    bio: "Works patiently with rhythm and detail until the story feels complete.",
   },
 ];
+
+const ceo = team.find((member) => member.role.toLowerCase().includes("ceo"));
+
+const teamMembers = team.filter((member) => member !== ceo);
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
   const [count, setCount] = useState(0);
@@ -57,7 +81,7 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
           requestAnimationFrame(animate);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (ref.current) {
@@ -168,8 +192,29 @@ export default function About() {
             <div className="gold-divider mt-6" />
           </AnimatedSection>
 
+          {/* ✅ CEO CARD (bigger, centered) */}
+          {ceo && (
+            <AnimatedSection className="mb-16">
+              <div className="glass-card p-8 text-center hover-lift max-w-md mx-auto">
+                <div className="w-24 h-24 mx-auto mb-5 image-placeholder rounded-full border border-primary/30">
+                  <span className="text-xs">Photo</span>
+                </div>
+                <h3 className="font-display text-xl font-medium text-foreground mb-1">
+                  {ceo.name}
+                </h3>
+                <p className="text-primary text-sm font-medium mb-3">
+                  {ceo.role}
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {ceo.bio}
+                </p>
+              </div>
+            </AnimatedSection>
+          )}
+
+          {/* ✅ TEAM GRID (UNCHANGED STYLING) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {team.map((member, index) => (
+            {teamMembers.map((member, index) => (
               <AnimatedSection key={member.name} delay={index * 0.15}>
                 <div className="glass-card p-6 text-center hover-lift group">
                   <div className="w-20 h-20 mx-auto mb-4 image-placeholder rounded-full border border-primary/30">
