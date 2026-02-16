@@ -1,37 +1,40 @@
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { AnimatedSection } from '@/components/AnimatedSection';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { AnimatedSection } from "@/components/AnimatedSection";
 
 const clients = [
-  { name: 'Partha Saradi', industry: 'SET GYM' },
-  { name: 'Client 2', industry: 'ISF JUNICORN' },
-  { name: 'Client 3', industry: 'RTA Kairatabad' },
-  { name: 'Client 4', industry: 'Industry' },
-  { name: 'Client 5', industry: 'Industry' },
-  { name: 'Client 6', industry: 'Industry' },
-  { name: 'Client 7', industry: 'Industry' },
-  { name: 'Client 8', industry: 'Industry' },
+  { name: "Partha Saradi", industry: "SET GYM" },
+  { name: "Client 2", industry: "ISF JUNICORN" },
+  { name: "Client 3", industry: "RTA Kairatabad" },
+  { name: "Client 4", industry: "Industry" },
+  { name: "Client 5", industry: "Industry" },
+  { name: "Client 6", industry: "Industry" },
+  { name: "Client 7", industry: "Industry" },
+  { name: "Client 8", industry: "Industry" },
 ];
 
 const testimonials = [
   {
-    quote: "Testimonial quote text goes here. Client feedback about the service and experience.",
-    author: 'Person Name',
-    role: 'Job Title',
-    company: 'Company Name',
+    quote:
+      "Testimonial quote text goes here. Client feedback about the service and experience.",
+    author: "Person Name",
+    role: "Job Title",
+    company: "Company Name",
   },
   {
-    quote: "Testimonial quote text goes here. Client feedback about the service and experience.",
-    author: 'Person Name',
-    role: 'Job Title',
-    company: 'Company Name',
+    quote:
+      "Testimonial quote text goes here. Client feedback about the service and experience.",
+    author: "Person Name",
+    role: "Job Title",
+    company: "Company Name",
   },
   {
-    quote: "Testimonial quote text goes here. Client feedback about the service and experience.",
-    author: 'Person Name',
-    role: 'Job Title',
-    company: 'Company Name',
+    quote:
+      "Testimonial quote text goes here. Client feedback about the service and experience.",
+    author: "Person Name",
+    role: "Job Title",
+    company: "Company Name",
   },
 ];
 
@@ -48,13 +51,15 @@ export default function Clients() {
             className="max-w-3xl"
           >
             <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">
-              Page Label
+              Clients
             </p>
             <h1 className="font-display text-3xl md:text-5xl font-semibold text-foreground mb-4">
-              Page Heading <span className="text-primary">Highlight</span>
+              Stories We've <span className="text-primary">Delivered</span>
             </h1>
             <p className="text-muted-foreground text-base">
-              Page description text goes here.
+              From startups to established brands, we've collaborated with
+              clients across industries to deliver impactful visuals, campaigns
+              and productions that speak louder than words.
             </p>
           </motion.div>
         </div>
@@ -65,7 +70,7 @@ export default function Clients() {
         <div className="container-wide">
           <AnimatedSection className="text-center mb-12">
             <h2 className="font-display text-xl md:text-2xl font-medium text-foreground">
-              Section Heading
+              Our Clients & Collaborators
             </h2>
             <div className="gold-divider mt-6" />
           </AnimatedSection>
@@ -77,9 +82,7 @@ export default function Clients() {
                   <div className="font-display text-lg md:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300 mb-1">
                     {client.industry}
                   </div>
-                  <p className="text-muted-foreground text-sm">
-                    {client.name}
-                  </p>
+                  <p className="text-muted-foreground text-sm">{client.name}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -92,10 +95,10 @@ export default function Clients() {
         <div className="container-wide">
           <AnimatedSection className="text-center mb-12">
             <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">
-              Section Label
+              Clients Voices
             </p>
             <h2 className="font-display text-2xl md:text-4xl font-semibold text-foreground">
-              Section Heading
+              Real Words, Real Work
             </h2>
             <div className="gold-divider mt-6" />
           </AnimatedSection>

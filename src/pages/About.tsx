@@ -47,6 +47,17 @@ const team = [
     role: "Editor",
     bio: "Works patiently with rhythm and detail until the story feels complete.",
   },
+  {
+    name: "Hakesh",
+    role: "Editor",
+    bio: "Works patiently with rhythm, detail, and timing until the story finds its flow.",
+  },
+
+  {
+    name: "Karthikeyan",
+    role: "Marketing & content strategist",
+    bio: "Listens to the brand, studies the audience, and builds content that connects both.",
+  },
 ];
 
 const ceo = team.find((member) => member.role.toLowerCase().includes("ceo"));
@@ -211,7 +222,7 @@ export default function About() {
             <AnimatedSection className="mb-16">
               <div className="glass-card p-8 text-center hover-lift max-w-md mx-auto">
                 <div className="w-24 h-24 mx-auto mb-5 image-placeholder rounded-full border border-primary/30">
-                  <span className="text-xs">Photo</span>
+                  <img src="https://res.cloudinary.com/dudrjp5cn/image/upload/v1771247344/WhatsApp_Image_2026-02-03_at_5.22.36_AM_h0zctp.jpg" alt="ceo-image" />
                 </div>
                 <h3 className="font-display text-xl font-medium text-foreground mb-1">
                   {ceo.name}

@@ -81,20 +81,17 @@ export default function Index() {
                 <br /> We Create Impact
               </span>
               <span className="block text-primary text-2xl md:text-3xl lg:text-4xl mt-2">
-                A creative production house delivering photography,
-                cinematography, videography, fashion visuals & branded content.
+                Everything Visual. Shot, Directed,<br /> Delivered - and many more
               </span>
             </h1>
 
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-8">
-              URE Productions is a creative production house specializing in
-              photography, cinematography, videography, and visual storytelling.
-              We collaborate with brands, businesses, artists, and emerging
-              talent to create cinematic visuals that connect, communicate, and
-              leave a lasting impression.
-              <br /> Whether you’re a brand looking to build identity, a creator
-              looking to grow, or a professional looking to collaborate — URE is
-              where stories come to life.
+              From photography and cinematic videography to full-scale
+              production, events, and creative execution, URE Productions
+              delivers end-to-end visual services designed to capture moments,
+              tell stories, and build impactful content. We work across fashion,
+              brands, events, corporate, and digital platforms — handling
+              everything from concept to final cut.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
