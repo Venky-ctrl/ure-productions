@@ -222,7 +222,10 @@ export default function About() {
             <AnimatedSection className="mb-16">
               <div className="glass-card p-8 text-center hover-lift max-w-md mx-auto">
                 <div className="w-24 h-24 mx-auto mb-5 image-placeholder rounded-full border border-primary/30">
-                  <img src="https://res.cloudinary.com/dudrjp5cn/image/upload/v1771247344/WhatsApp_Image_2026-02-03_at_5.22.36_AM_h0zctp.jpg" alt="ceo-image" />
+                  <img
+                    src="https://res.cloudinary.com/dudrjp5cn/image/upload/v1771247344/WhatsApp_Image_2026-02-03_at_5.22.36_AM_h0zctp.jpg"
+                    alt="ceo-image"
+                  />
                 </div>
                 <h3 className="font-display text-xl font-medium text-foreground mb-1">
                   {ceo.name}

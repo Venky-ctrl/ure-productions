@@ -94,6 +94,34 @@
   .text-gradient {
     @apply text-primary;
   }
+  /* Premium breathing glow */
+  @keyframes luxuryGlow {
+    0%,
+    100% {
+      box-shadow:
+        0 0 8px hsl(var(--gold) / 0.6),
+        0 0 18px hsl(var(--gold) / 0.5),
+        0 0 35px hsl(var(--gold) / 0.35);
+    }
+    50% {
+      box-shadow:
+        0 0 14px hsl(var(--gold) / 0.75),
+        0 0 28px hsl(var(--gold) / 0.6),
+        0 0 45px hsl(var(--gold) / 0.4);
+    }
+  }
+
+  .premium-glow {
+    animation: luxuryGlow 2.8s ease-in-out infinite;
+    transition: all 0.3s ease;
+  }
+
+  .premium-glow:hover {
+    box-shadow:
+      0 0 18px hsl(var(--gold) / 0.85),
+      0 0 40px hsl(var(--gold) / 0.7),
+      0 0 65px hsl(var(--gold) / 0.5);
+  }
 
   .glass-card {
     @apply bg-card border border-border transition-all duration-300;
