@@ -21,6 +21,24 @@ export default function IntroVideo({ onFinish }) {
         }}
       />
 
+      {/* Skip Button */}
+      <button
+        onClick={onFinish}
+        className="
+          absolute bottom-4tg right-4 z-20
+          px-4 py-2
+          text-sm
+          border border-white/30
+         text-white/100
+          backdrop-blur-md
+         bg-black/10
+         hover:bg-black/10
+          transition-all duration-300
+        "
+      >
+        Skip Intro
+      </button>
+
       <div
         className="pointer-events-none absolute inset-0"
         style={{

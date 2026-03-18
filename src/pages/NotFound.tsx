@@ -23,7 +23,7 @@ const NotFound = () => {
             404
           </h1>
           <h2 className="font-display text-2xl md:text-4xl font-semibold text-foreground mb-4">
-            Scene Not Found
+            Not Found
           </h2>
           <p className="text-muted-foreground text-lg mb-10 max-w-md mx-auto">
             Looks like this scene didn't make the final cut. Let's get you back on set.
