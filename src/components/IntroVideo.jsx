@@ -25,7 +25,7 @@ export default function IntroVideo({ onFinish }) {
       <button
         onClick={onFinish}
         className="
-          absolute bottom-4tg right-4 z-20
+          absolute bottom-4 right-4 z-20
           px-4 py-2
           text-sm
           border border-white/30
