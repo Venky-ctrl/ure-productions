@@ -9,13 +9,13 @@ import { toast } from "sonner";
 const contactInfo = [
   {
     title: "Email",
-    value: "email@example.com",
-    href: "mailto:email@example.com",
+    value: "unitedproductions.info@gmail.com",
+    href: "mailto:unitedproductions.info@gmail.com",
   },
   {
     title: "Phone",
-    value: "+0 (000) 000-000",
-    href: "tel:+0000000000",
+    value: "+91 87901 10798",
+    href: "tel:+91 8790110798",
   },
   {
     title: "Address",
@@ -65,8 +65,20 @@ export default function Contact() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section className="section-padding bg-charcoal border-b border-border">
-        <div className="container-wide">
+      <section className="relative h-[35vh] min-h-[350px] section-padding border-b border-border overflow-hidden">
+        {/* Background */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/contact-hero.png"
+            alt="contact-bg"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+
+        <div className="relative z-10 container-wide">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -159,7 +171,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        placeholder="John Doe"
+                        placeholder="Paul"
                         className="bg-background border-border focus:border-primary focus:ring-primary"
                       />
                     </div>
@@ -177,7 +189,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        placeholder="john@example.com"
+                        placeholder="paul@example.com"
                         className="bg-background border-border focus:border-primary focus:ring-primary"
                       />
                     </div>

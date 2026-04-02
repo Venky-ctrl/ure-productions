@@ -75,8 +75,9 @@ export default function Work() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section className="section-padding bg-charcoal border-b border-border">
-        <div className="container-wide">
+      <section className=" relative section-padding bg-charcoal border-b border-border bg-[url('https://5.imimg.com/data5/SELLER/Default/2025/2/492123020/VO/EP/PV/241569586/indoor-studio-rental-services.jpg')] bg-cover bg-no-repeat bg-center">
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative container-wide">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

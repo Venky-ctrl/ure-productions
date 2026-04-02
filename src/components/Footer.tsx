@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FaInstagram, FaYoutube, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const footerLinks = {
   quickLinks: [
@@ -18,10 +19,18 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: 'Social 1', href: '#' },
-  { name: 'Social 2', href: '#' },
-  { name: 'Social 3', href: '#' },
-  { name: 'Social 4', href: '#' },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/ure_productions/",
+    icon: FaInstagram,
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@ureentertainments7167",
+    icon: FaYoutube,
+  },
+  { name: "LinkedIn", href: "#", icon: FaLinkedin },
+  { name: "Facebook", href: "#", icon: FaFacebook },
 ];
 
 export function Footer() {
@@ -44,15 +53,21 @@ export function Footer() {
               collaborative storytelling.
             </p>
             <div className="flex items-center gap-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm"
-                >
-                  {social.name}
-                </a>
-              ))}
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
+
+                return (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300"
+                  >
+                    <Icon size={22} />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
@@ -115,10 +130,10 @@ export function Footer() {
                 </span>
                 <p className="mt-1">
                   <a
-                    href="tel:+0000000000"
+                    href="tel:+91 87901 10798"
                     className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm"
                   >
-                    +0 (000) 000-000
+                    +91 87901 10798
                   </a>
                 </p>
               </li>
@@ -128,14 +143,24 @@ export function Footer() {
                 </span>
                 <p className="mt-1">
                   <a
-                    href="mailto:email@example.com"
+                    href="mailto:unitedproductions.info@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm"
                   >
-                    email@example.com
+                    unitedproductions.info@gmail.com
                   </a>
                 </p>
               </li>
             </ul>
+          </div>
+
+          <div className="md:col-span-2 lg:col-span-4">
+            <div className="w-full h-[250px] rounded-md overflow-hidden border border-border hover:border-primary/50 transition">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.660268498081!2d78.47099903389439!3d17.49971250307892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb910345abaab3%3A0x7d7f2b7e9cfca1ce!2sURE%20Productions!5e1!3m2!1sen!2sin!4v1775147627120!5m2!1sen!2sin"
+                className="w-full h-full"
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
 

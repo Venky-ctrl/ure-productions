@@ -81,7 +81,7 @@ export default function Index() {
                 <br /> We Create Impact
               </span>
               <span className="block text-primary text-2xl md:text-3xl lg:text-4xl mt-2">
-                Everything Visual.<br /> Shot, Directed, Delivered - and many more
+                Everything Visual<br /> Shot, Directed, Delivered <br /> and many more
               </span>
             </h1>
 

@@ -24,12 +24,12 @@ const team = [
   },
   {
     name: "Shivani",
-    role: "Chief Operations Officier",
+    role: "Chief Operations Officer",
     bio: "Turns plans into action and keeps the work moving without friction.",
   },
   {
     name: "Akbar",
-    role: "Chief Marketing Officier",
+    role: "Chief Marketing Officer",
     bio: "Shapes how the brand speaks, shows up, and connects with people.",
   },
   {
@@ -115,16 +115,20 @@ export default function About() {
     <main className="pt-20">
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden border-b border-border">
-        <div className="absolute inset-0 image-placeholder">
-          <span className="text-lg">About Hero Image</span>
+        <div className="absolute inset-0">
+          <img
+            src="/images/about-hero.jpg"
+            alt="about-hero-image"
+            className="w-full h-full object-cover"
+          />
         </div>
-
+        <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 container-wide px-6 md:px-12 lg:px-20 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="max-w-3xl mx-auto bg-background/95 backdrop-blur-sm p-8 border border-border"
+            className="max-w-3xl mx-auto bg-black/20 backdrop-blur-lg p-8 md:p-10 border border-white/10"
           >
             <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">
               About URE Productions

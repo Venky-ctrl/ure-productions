@@ -12,7 +12,7 @@ const services = [
       "Wedding & Pre-Wedding Shoots",
       "Engagement & Couple Portraits",
       "Event Photography (Private & Corporate)",
-      "Fashion & Modeling Shoots",
+      "Fashion & Modelling Shoots",
       "Product & Brand Photography",
       "Lifestyle & Candid Photography",
       "Maternity & Baby Shoots",
@@ -43,6 +43,7 @@ const services = [
       "Advertising Campaign Shoots",
       "Branding & Promotional Content Creation",
       "Social Media Content Production",
+      "Podcasts Services"
     ],
     ctatext: "Direct the Vision",
   },
@@ -78,8 +79,20 @@ export default function Services() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section className="section-padding bg-charcoal border-b border-border">
-        <div className="container-wide">
+      <section className="relative section-padding bg-charcoal border-b border-border">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/our-services-bg.mp4" type="video/mp4" />
+        </video>
+
+        <div className="absolute inset-0 bg-black/70" />
+        
+        <div className="relative container-wide">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

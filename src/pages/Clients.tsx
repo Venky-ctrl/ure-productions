@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 const clients = [
-  { name: "Partha Saradi", industry: "SET GYM" },
+  { name: "Pardha Saradhi", industry: "SET GYM" },
   { name: "Client 2", industry: "ISF JUNICORN" },
-  { name: "Client 3", industry: "RTA Kairatabad" },
-  { name: "Client 4", industry: "Industry" },
-  { name: "Client 5", industry: "Industry" },
+  { name: "Client 3", industry: "RTA Khairtabad" },
+  { name: "Client 4", industry: "Dome Cafe" },
+  { name: "Client 5", industry: "Hetero Ltd" },
   { name: "Client 6", industry: "Industry" },
   { name: "Client 7", industry: "Industry" },
   { name: "Client 8", industry: "Industry" },
@@ -42,8 +42,19 @@ export default function Clients() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section className="section-padding bg-charcoal border-b border-border">
-        <div className="container-wide">
+      <section className="relative h-[35vh] min-h-[350px] section-padding border-b border-border overflow-hidden">
+        {/* Background */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/client-hero.jpg"
+            alt="client-bg"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+        <div className="relative z-10 container-wide">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
